@@ -1,0 +1,4 @@
+---
+---
+
+window.m = class m

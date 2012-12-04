@@ -1,0 +1,12 @@
+source 'http://rubygems.org'
+
+gem 'jekyll'
+gem 'haml'
+gem 'rake'
+gem 'rdiscount'
+gem 'compass'
+gem 'coffee-script'
+gem 'foreman'
+gem 'rb-fsevent'
+gem 'capistrano'
+gem 'yui-compressor'

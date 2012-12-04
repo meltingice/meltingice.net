@@ -1,0 +1,27 @@
+@import "header.scss";
+@import "clocks.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.Left {
+  float: left;
+  text-align: left;
+}
+
+.Right {
+  float: right;
+  text-align: right;
+}
+
+.Clear {
+  clear: both;
+}
+
+#Content {
+  width: 600px;
+  margin: 0 auto;
+}

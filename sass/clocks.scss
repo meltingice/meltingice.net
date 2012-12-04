@@ -1,0 +1,17 @@
+#Clocks {
+  .Clock {
+    float: left;
+    width: 100px;
+    margin: 0 10px;
+
+    p {
+      text-align: center;
+      margin: 10px 0 0 0;
+
+      &.TimeAgo {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+}
