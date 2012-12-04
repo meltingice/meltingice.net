@@ -15,7 +15,12 @@ m.Clock = class Clock
   dialStrokeColor: '#f8f8f2'
   dialRadius: 8
 
-  constructor: (@canvas, @service) ->
+  lastTime: [0, 0, 0]
+  beingAdjusted: false
+
+  constructor: (@canvas, service) ->
+    @dataSource = new m.ClockDataSource[service]()
+
     @canvas.width = @width
     @canvas.height = @height
 
@@ -50,6 +55,11 @@ m.Clock = class Clock
 
     @drawBackground()
     @drawClockHands()
+
+    @setTime()
+    setInterval =>
+      @setTime()
+    , @dataSource.updateFrequency
 
     paper.view.onFrame = @render
 
@@ -89,11 +99,39 @@ m.Clock = class Clock
     @clockDial.strokeColor = @dialStrokeColor
 
   render: (event) =>
-    secondRot = event.delta * 6
-    minuteRot = secondRot / 60
-    hourRot = minuteRot / 12
+    
 
-    @secondHand.rotate secondRot, @center
-    @minuteHand.rotate minuteRot, @center
-    @hourHand.rotate hourRot, @center
+  setTime: ->
+    [hour, minute, second] = @dataSource.ping()
+    hour = hour % 12 if hour > 11
+
+    return unless @timeChanged(hour, minute, second)
+
+    lastTimeRot = @timeInDegrees(@lastTime[0], @lastTime[1], @lastTime[2])
+    newTimeRot = @timeInDegrees(hour, minute, second)
+    rotDiff = []
+
+    for i in [0...3]
+      # Looped around
+      if newTimeRot[i] < lastTimeRot[i]
+        rotDiff[i] = (360 - lastTimeRot[i]) + newTimeRot[i]
+      else
+        rotDiff[i] = newTimeRot[i] - lastTimeRot[i]
+
+    @secondHand.rotate rotDiff[2], @center
+    @minuteHand.rotate rotDiff[1], @center
+    @hourHand.rotate rotDiff[0], @center
+
+    @lastTime = [hour, minute, second]
+
+  timeChanged: (time...) ->
+    time[0] isnt @lastTime[0] or
+    time[1] isnt @lastTime[1] or
+    time[2] isnt @lastTime[2]
+
+  timeInDegrees: (hour, minute, second) ->
+    sDeg = second * 6
+    mDeg = minute * 6 + (second / 60) * 6
+    hDeg = hour * 30 + (minute / 60) * 30
+    [hDeg, mDeg, sDeg]
     
