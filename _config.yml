@@ -3,10 +3,4 @@ safe: false
 server_port: 4000
 url: http://localhost:4000
 markdown: rdiscount
-asset_bundler:
-  compress:
-    js: yui
-    css: yui
-  base_path: /bundles/
-  remove_bundled: false
-  dev: false
+permalink: pretty
