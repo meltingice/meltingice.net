@@ -1,0 +1,39 @@
+/* line 3, ../sass/type.scss */
+h1, h2, h3, h4, h5, h6, p {
+  color: #333332;
+  margin: 0;
+  font-family: "Crimson Text", Georgia, Times, serif;
+}
+
+/* line 9, ../sass/type.scss */
+a {
+  color: #487b7f;
+  text-decoration: none;
+}
+/* line 13, ../sass/type.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 18, ../sass/type.scss */
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* line 23, ../sass/type.scss */
+h2 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+/* line 28, ../sass/type.scss */
+p {
+  font-size: 1.35em;
+  line-height: 1.6em;
+}
+
+/* line 33, ../sass/type.scss */
+.SansSerif {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

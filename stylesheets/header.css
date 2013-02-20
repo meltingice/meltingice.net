@@ -1,0 +1,23 @@
+/* line 3, ../sass/header.scss */
+#Header {
+  width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+/* line 8, ../sass/header.scss */
+#Header h1 {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  margin: 5px 0;
+}
+/* line 14, ../sass/header.scss */
+#Header h1 a {
+  color: #222221;
+}
+/* line 19, ../sass/header.scss */
+#Header h4 {
+  margin: 0;
+  color: #888887;
+  font-weight: normal;
+}

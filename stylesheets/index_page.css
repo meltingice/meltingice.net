@@ -1,0 +1,8 @@
+/* line 3, ../sass/index_page.scss */
+.Post {
+  border-bottom: 1px #e2e2e1 solid;
+}
+/* line 6, ../sass/index_page.scss */
+.Post:last-child {
+  border-bottom: none;
+}
