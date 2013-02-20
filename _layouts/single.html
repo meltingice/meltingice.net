@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ryan lefevre</title>
+  <title>ryan lefevre - {{ page.title }}</title>
 
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
@@ -19,5 +19,7 @@
       <p class="PostMeta SansSerif">Posted {{ page.date | date: "%B %d, %Y" }}</p>
     </div>
   </div>
+
+  {% include footer.html %}
 </body>
 </html>
