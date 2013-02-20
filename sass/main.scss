@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: $white;
+
+  &.IndexPage { @import "index_page.scss"; }
+  &.SinglePage { @import "single_page.scss"; }
 }
 
 .Left {
@@ -26,17 +29,20 @@ body {
   margin: 0 auto;
 
   h1 {
-    color: $red;
+    color: $dark_grey;
   }
 
   .Post {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px $light_red solid;
 
-    p.PostMeta {
-      color: $light_brown;
-      font-size: 16px;
+    p {
+      margin-bottom: 20px;
+
+      &.PostMeta {
+        color: $grey;
+        font-size: 16px;
+      }
     }
   }
 }

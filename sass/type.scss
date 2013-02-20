@@ -2,12 +2,12 @@
 
 h1, h2, h3, h4, h5, h6, p {
   color: $dark_grey;
-  margin: 0 0 25px 0;
+  margin: 0;
   font-family: "Crimson Text", Georgia, Times, serif;
 }
 
 a {
-  color: $red;
+  color: $green;
   text-decoration: none;
 
   &:hover {
@@ -28,4 +28,8 @@ h2 {
 p {
   font-size: 1.35em;
   line-height: 1.6em;
+}
+
+.SansSerif {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

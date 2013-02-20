@@ -10,10 +10,14 @@
     font-size: 72px;
     line-height: 72px;
     margin: 5px 0;
+
+    a {
+      color: $black;
+    }
   }
 
   h4 {
     margin: 0;
-    color: $light_brown;
+    color: $grey;
   }
 }
