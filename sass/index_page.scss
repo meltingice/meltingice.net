@@ -2,4 +2,8 @@
 
 .Post {
   border-bottom: 1px $lightest_grey solid;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }

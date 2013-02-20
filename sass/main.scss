@@ -1,5 +1,6 @@
 @import "header.scss";
 @import "type.scss";
+@import "footer.scss";
 
 body {
   margin: 0;
@@ -42,6 +43,7 @@ body {
       &.PostMeta {
         color: $grey;
         font-size: 16px;
+        padding: 10px 0;
       }
     }
   }
