@@ -1,6 +1,7 @@
 @import "header.scss";
 @import "type.scss";
 @import "footer.scss";
+@import "pygments.scss";
 
 body {
   margin: 0;
@@ -54,5 +55,18 @@ body {
 
   > img {
     width: 180px;
+  }
+}
+
+div.highlight {
+  font-size: 15px;
+
+  pre {
+    padding: 5px 15px;
+    border-left: 3px $lightest_grey solid;
+  }
+
+  code {
+    font-family: "Source Code Pro", monospace;
   }
 }
