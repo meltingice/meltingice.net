@@ -3,7 +3,7 @@ layout: post
 title: Implementing an ORM in Coffeescript - Part 1
 ---
 
-For the past week and a half, I have been working on and off on refactoring my [node-activerecord](https://github.com/meltingice/node-activerecord) project. For those of you who aren't familiar with the concept of "active record", it's a way to map an object directly to a database entry. It exposes an object-relational mapping (ORM) that makes it incredibly simple to work with the database.
+For the past week and a half, I have been working on and off on refactoring my [node-activerecord](https://github.com/meltingice/node-activerecord/tree/refactoring) project. For those of you who aren't familiar with the concept of "active record", it's a way to map an object directly to a database entry. It exposes an object-relational mapping (ORM) that makes it incredibly simple to work with the database.
 
 Since a lot goes into developing a full ORM (and because I'm in the middle of developing node-activerecord as I write this), I decided to break down these posts into multiple parts. In this first part, I want to share a cool trick that involves implementing the attribute getters and setters.
 
