@@ -52,7 +52,7 @@ exports.Module = class Module
 If you're a Ruby user, than a lot of this might look familiar to you. So what does the Module class allow us to do? This code is taken directly from my [node-activerecord](https://github.com/meltingice/node-activerecord) project:
 
 {% highlight coffeescript %}
-{Module} = require './module'
+{Module} = require 'coffeescript-module'
 
 class Model extends Module
   @extends  require('./tablenaming').static
@@ -68,7 +68,7 @@ class Model extends Module
 This allows me to cleanly and easily organize the majority of the code for the Model class in other files. The Module class also allows you to do things like:
 
 {% highlight coffeescript %}
-{Module} = require './module'
+{Module} = require 'coffeescript-module'
 
 class Foo extends Module
   log: -> console.log 'hi!'
@@ -87,4 +87,4 @@ bar.b()   # calls Bar::a()
 bar.d     # gets Bar::c
 {% endhighlight %}
 
-I've setup [a repository](https://github.com/meltingice/coffeescript-module) for the Module class if you would like to contribute. Otherwise, if you have any ideas or suggestions, shoot me a message on [Twitter](http://twitter.com/meltingice).
+I've setup [a repository](https://github.com/meltingice/coffeescript-module) for the Module class if you would like to contribute. The project is also on [NPM](http://npmjs.org), and if you would like an easy way to use it in your own NodeJS project simply run `npm install coffeescript-module`.
