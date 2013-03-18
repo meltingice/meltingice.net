@@ -533,26 +533,30 @@ body.SinglePage .Post {
   font-size: 16px;
   padding: 10px 0;
 }
+/* line 51, ../sass/main.scss */
+#Content .Post .Share {
+  margin-top: 9px;
+}
 
-/* line 53, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .Profile {
   padding: 0 30px 0 0;
 }
-/* line 56, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .Profile > img {
   width: 180px;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 div.highlight {
   font-size: 15px;
 }
-/* line 64, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 div.highlight pre {
   padding: 5px 15px;
   border-left: 3px #e2e2e1 solid;
 }
-/* line 69, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 div.highlight code {
   font-family: "Source Code Pro", monospace;
 }
