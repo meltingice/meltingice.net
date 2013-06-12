@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plucking Multiple Database Columns in Rails 3
+title: Plucking Multiple Columns in Rails 3
 ---
 
 The problem: you have a large result set that you want to return, but you don't need full blown ActiveRecord models for each result. In fact, doing so would likely bring the Ruby process to a crawl. Instead, you just need a few attributes in an array plucked from each result.
