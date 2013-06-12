@@ -21,13 +21,20 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 p {
   font-size: 1.35em;
   line-height: 1.6em;
+}
+
+blockquote {
+  p {
+    font-size: 1.25em;
+    color: adjust-color($dark_grey, $lightness: 10%);
+  }
 }
 
 .SansSerif {

@@ -47,8 +47,8 @@ h1 {
 
 /* line 23, ../sass/type.scss */
 h2 {
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 /* line 28, ../sass/type.scss */
@@ -57,7 +57,13 @@ p {
   line-height: 1.6em;
 }
 
-/* line 33, ../sass/type.scss */
+/* line 34, ../sass/type.scss */
+blockquote p {
+  font-size: 1.25em;
+  color: #4d4d4b;
+}
+
+/* line 40, ../sass/type.scss */
 .SansSerif {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
