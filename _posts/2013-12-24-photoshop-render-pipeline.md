@@ -110,9 +110,9 @@ Given a set of layer style instructions and an Image, apply each applicable laye
 
 The main class that runs the pipeline. The renderer, given any PSD::Node inherited object, will run the pipeline to produce the final image data. The final image data can be given to ChunkyPNG for easy saving or further manipulation.
 
-``` ruby
+{% highlight ruby %}
 renderer = Renderer.new(node).render!
 renderer.to_png
-```
+{% endhighlight %}
 
 The renderer will also include a concern that is responsible for calculating the inherited opacity of a layer.
