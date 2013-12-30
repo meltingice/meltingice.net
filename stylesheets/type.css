@@ -30,30 +30,40 @@ h1 {
 
 /* line 29, ../sass/type.scss */
 h2 {
-  font-size: 32px;
+  font-size: 2em;
   line-height: 42px;
   padding-top: 20px;
 }
 
 /* line 35, ../sass/type.scss */
+h3 {
+  font-size: 1.7em;
+}
+
+/* line 39, ../sass/type.scss */
+h4 {
+  font-size: 1.4em;
+}
+
+/* line 43, ../sass/type.scss */
 p {
   font-size: 1.35em;
   line-height: 1.6em;
 }
 
-/* line 40, ../sass/type.scss */
+/* line 48, ../sass/type.scss */
 li {
   font-size: 1.25em;
   line-height: 1.5em;
 }
 
-/* line 46, ../sass/type.scss */
+/* line 54, ../sass/type.scss */
 blockquote p {
   font-size: 1.25em;
   color: #4d4d4b;
 }
 
-/* line 52, ../sass/type.scss */
+/* line 60, ../sass/type.scss */
 .SansSerif {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
