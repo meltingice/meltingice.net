@@ -1,5 +1,10 @@
 @import "colors.scss";
 
+body {
+  color: $dark_grey;
+  font-family: "Crimson Text", Georgia, Times, serif;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   color: $dark_grey;
   margin: 0;
@@ -18,16 +23,23 @@ a {
 h1 {
   font-size: 40px;
   line-height: 50px;
+  padding-top: 20px;
 }
 
 h2 {
   font-size: 32px;
   line-height: 42px;
+  padding-top: 20px;
 }
 
 p {
   font-size: 1.35em;
   line-height: 1.6em;
+}
+
+li {
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 blockquote {

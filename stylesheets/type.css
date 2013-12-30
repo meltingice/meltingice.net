@@ -1,45 +1,59 @@
 /* line 3, ../sass/type.scss */
+body {
+  color: #333332;
+  font-family: "Crimson Text", Georgia, Times, serif;
+}
+
+/* line 8, ../sass/type.scss */
 h1, h2, h3, h4, h5, h6, p {
   color: #333332;
   margin: 0;
   font-family: "Crimson Text", Georgia, Times, serif;
 }
 
-/* line 9, ../sass/type.scss */
+/* line 14, ../sass/type.scss */
 a {
   color: #487b7f;
   text-decoration: none;
 }
-/* line 13, ../sass/type.scss */
+/* line 18, ../sass/type.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 18, ../sass/type.scss */
+/* line 23, ../sass/type.scss */
 h1 {
   font-size: 40px;
   line-height: 50px;
+  padding-top: 20px;
 }
 
-/* line 23, ../sass/type.scss */
+/* line 29, ../sass/type.scss */
 h2 {
   font-size: 32px;
   line-height: 42px;
+  padding-top: 20px;
 }
 
-/* line 28, ../sass/type.scss */
+/* line 35, ../sass/type.scss */
 p {
   font-size: 1.35em;
   line-height: 1.6em;
 }
 
-/* line 34, ../sass/type.scss */
+/* line 40, ../sass/type.scss */
+li {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+/* line 46, ../sass/type.scss */
 blockquote p {
   font-size: 1.25em;
   color: #4d4d4b;
 }
 
-/* line 40, ../sass/type.scss */
+/* line 52, ../sass/type.scss */
 .SansSerif {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
