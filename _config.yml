@@ -9,4 +9,4 @@ lsi: false
 port: 4000
 markdown: rdiscount
 permalink: pretty
-pygments: true
+highlighter: pygments
