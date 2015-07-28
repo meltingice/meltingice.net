@@ -7,6 +7,5 @@ exclude:
 safe: true
 lsi: false
 port: 4000
-markdown: rdiscount
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
