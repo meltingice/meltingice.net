@@ -8,4 +8,3 @@ safe: true
 lsi: false
 port: 4000
 permalink: pretty
-highlighter: rouge
