@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 14, ../sass/type.scss */
 a {
-  color: #487b7f;
+  color: #487B7F;
   text-decoration: none;
 }
 /* line 18, ../sass/type.scss */
@@ -290,13 +290,13 @@ blockquote p {
 /* Literal.String */
 /* line 28, ../sass/pygments.scss */
 .na {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Attribute */
 /* line 29, ../sass/pygments.scss */
 .nb {
-  color: #0086b3;
+  color: #0086B3;
 }
 
 /* Name.Builtin */
@@ -309,7 +309,7 @@ blockquote p {
 /* Name.Class */
 /* line 31, ../sass/pygments.scss */
 .no {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Constant */
@@ -322,7 +322,7 @@ blockquote p {
 /* Name.Decorator */
 /* line 33, ../sass/pygments.scss */
 .ni {
-  color: purple;
+  color: #800080;
 }
 
 /* Name.Entity */
@@ -355,13 +355,13 @@ blockquote p {
 /* Name.Namespace */
 /* line 38, ../sass/pygments.scss */
 .nt {
-  color: navy;
+  color: #000080;
 }
 
 /* Name.Tag */
 /* line 39, ../sass/pygments.scss */
 .nv {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Variable */
@@ -476,19 +476,19 @@ blockquote p {
 /* Name.Builtin.Pseudo */
 /* line 58, ../sass/pygments.scss */
 .vc {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Variable.Class */
 /* line 59, ../sass/pygments.scss */
 .vg {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Variable.Global */
 /* line 60, ../sass/pygments.scss */
 .vi {
-  color: teal;
+  color: #008080;
 }
 
 /* Name.Variable.Instance */
@@ -502,7 +502,7 @@ blockquote p {
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #ffffff;
 }
 /* line 3, ../sass/index_page.scss */
 body.IndexPage .Post {
@@ -514,7 +514,7 @@ body.IndexPage .Post:last-child {
 }
 /* line 2, ../sass/single_page.scss */
 body.SinglePage #Content > h1 {
-  color: #487b7f;
+  color: #487B7F;
   padding: 20px 0;
 }
 /* line 8, ../sass/single_page.scss */
@@ -564,29 +564,33 @@ body.SinglePage .Post {
   padding: 10px 0;
 }
 /* line 51, ../sass/main.scss */
+#Content .Post img {
+  max-width: 100%;
+}
+/* line 55, ../sass/main.scss */
 #Content .Post .Share {
   margin-top: 9px;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .Profile {
   padding: 0 30px 0 0;
 }
-/* line 60, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .Profile > img {
   width: 180px;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 div.highlight {
   font-size: 15px;
 }
-/* line 68, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 div.highlight pre {
   padding: 5px 15px;
   border-left: 3px #e2e2e1 solid;
 }
-/* line 73, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 div.highlight code {
   font-family: "Source Code Pro", monospace;
 }
